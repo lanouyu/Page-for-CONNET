@@ -22,7 +22,7 @@ layout: default
               <p class='text'>  Sequence labeling is a fundamental framework for various natural language processing problems. Its performance is largely influenced by the annotation quality and quantity in supervised learning scenarios. In many cases, obtaining ground truth labels is costly, but noisy annotations or annotations from different domains are accessible. In this paper, we propose a novel framework Consensus Network (CONNET) that can be trained on annotations from multiple sources (e.g., crowd annotation, cross-domain data...). It learns individual representation for every source and dynamically aggregates source-specific knowledge by a context-aware attention module. Finally, it leads to a model reflecting the agreement (consensus) among multiple sources. We evaluate the proposed framework in two practical settings of multi-source learning: learning with crowd annotations and unsupervised cross-domain model adaptation. Extensive experimental results show that our model achieves significant improvements over existing methods in both settings. We also demonstrate that the method can apply to various tasks and cope with different encoders.</p>
         </div>
         <div class="col-md-5" >
-            <img src="{{ "/assets/img/example_for_project.gif" | relative_url }}" alt="fig_example" class="img-responsive">
+            <img src="{{ "/assets/img/intro.gif" | relative_url }}" alt="fig_example" class="img-responsive">
         </div>
     </div>
 
@@ -47,7 +47,7 @@ layout: default
     </div>
     <div class="row middle" style="margin-top: 20px;">
         <div class="col-md-5" style="text-align: center;">
-            <div class="img-exp"> <img src="{{ "/assets/img/hierarchical_viz.png" | relative_url }}" alt="fig_viz" class="img-responsive center-block"> </div>
+            <div class="img-exp"> <img src="{{ "/assets/img/exp_crowd.png" | relative_url }}" alt="fig_viz" class="img-responsive center-block"> </div>
         </div>
         <div class="col-md-7">
             <p class='text' style="text-align: justify;"><strong>Learning with crowd annotations.</strong>. We can see that CONNET outperforms all other methods on both datasets significantly on F1 score, which shows the ef- fectiveness of dealing with noisy annotations for higher-quality labels.
@@ -56,19 +56,11 @@ layout: default
     </div>
     <div class="row middle">
         <div class="col-md-5">
-            <div class="img-exp" style="padding-top: 20px;"><img src="{{ "/assets/img/re_tab.png" | relative_url }}" alt="fig_rule_extraction" class="img-responsive center-block"></div>
+            <div class="img-exp" style="padding-top: 20px;"><img src="{{ "/assets/img/exp_domain.png" | relative_url }}" alt="fig_rule_extraction" class="img-responsive center-block"></div>
         </div>
         <div class="col-md-7">
             <p class='text' style="text-align: justify;"><strong>Unsupervised cross-domain model adaptation.</strong> We can see that CONNET performs the best on most of the domains and achieves the highest average score over all domains.
             </p>
-        </div>
-    </div>
-    <div class="row middle">
-        <div class="col-md-5 ">
-            <div class="img-exp "><img src="{{ "/assets/img/human_eval.png" | relative_url }}" alt="fig_rule_extraction" class="img-responsive center-block"></div>
-        </div>
-        <div class="col-md-7">
-            <p class='text' style="text-align: justify;"><strong>Visualization of case study.</strong> It is enlightening to analyze whether the model decides the importance of annotators given a sentence. The visualization shows (a) the expertise of annotators; (b) attention weights for sample sentences. We can see the attention module would give more weights to those annotators  </p>
         </div>
     </div>
 
@@ -79,7 +71,7 @@ layout: default
             <h4>To cite us</h4>
             <pre>
 @inproceedings{
-    Lan2020learning,
+    lan2020learning,
     title={Learning to Contextually Aggregate Multi-Source Supervision for Sequence Labeling},
     author={Ouyu Lan and Xiao Huang and Bill Yuchen Lin and He Jiang and Liyuan Liu and Xiang Ren},
     booktitle={Proc. of ACL},
