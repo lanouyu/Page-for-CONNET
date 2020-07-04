@@ -1,14 +1,14 @@
 # Site settings
-title: Towards Hierarchical Importance Attribution Explaining Compositional Semantics for Neural Sequence Models
-email: your-email@domain.com
+title: Learning to Contextually Aggregate Multi-Source Supervision for Sequence Labeling
+email: lanouyu@gmail.com
 description: >
-  Project page for "Towards Hierarchical Importance Attribution: Explaining Compositional Semantics for Neural Sequence Models"
+  Project page for "Learning to Contextually Aggregate Multi-Source Supervision for Sequence Labeling"
 lang: en-US
 
-baseurl: "/hiexpl" # the subpath of your site, e.g. /blog/
-url: https://inklab.usc.edu/hiexpl # the base hostname & protocol for your site
-git_address: https://github.com/ink-usc/hiexpl
-git_edit_address: https://github.com/ink-usc/hiexpl/blob/gh-pages
+baseurl: "/connet" # the subpath of your site, e.g. /blog/
+url: https://inklab.usc.edu/connet # the base hostname & protocol for your site
+git_address: https://github.com/lanouyu/Page-for-CONNET
+git_edit_address: https://github.com/lanouyu/Page-for-CONNET/blob/gh-pages
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
