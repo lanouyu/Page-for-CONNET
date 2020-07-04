@@ -1,0 +1,98 @@
+---
+layout: default
+---
+
+<div class="header-container jumbotron">
+    <div class="container">
+        <h2>Learning to Contextually Aggregate Multi-Source Supervision for Sequence Labeling</h2>
+        <p>Ouyu Lan∗, Xiao Huang∗, Bill Yuchen Lin, He Jiang, Liyuan Liu, Xiang Ren, <i>ACL 2020.</i></p>
+        <span>
+            <a class="btn btn-default" href="https://arxiv.org/abs/1910.04289" role="button">Paper</a> 
+            <a class="btn btn-default" href="https://github.com/INK-USC/ConNet" role="button">Code</a> 
+            <a class="btn btn-default" href="#cite" role="button">Cite</a>
+        </span>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row middle">
+        <div class="col-md-7">
+            <h4>Introduction</h4>
+              <p class='text'>  Sequence labeling is a fundamental framework for various natural language processing problems. Its performance is largely influenced by the annotation quality and quantity in supervised learning scenarios. In many cases, obtaining ground truth labels is costly, but noisy annotations or annotations from different domains are accessible. In this paper, we propose a novel framework Consensus Network (CONNET) that can be trained on annotations from multiple sources (e.g., crowd annotation, cross-domain data...). It learns individual representation for every source and dynamically aggregates source-specific knowledge by a context-aware attention module. Finally, it leads to a model reflecting the agreement (consensus) among multiple sources. We evaluate the proposed framework in two practical settings of multi-source learning: learning with crowd annotations and unsupervised cross-domain model adaptation. Extensive experimental results show that our model achieves significant improvements over existing methods in both settings. We also demonstrate that the method can apply to various tasks and cope with different encoders.</p>
+        </div>
+        <div class="col-md-5" >
+            <img src="{{ "/assets/img/example_for_project.gif" | relative_url }}" alt="fig_example" class="img-responsive">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row middle">
+        <div class="col-md-5">
+            <img src="{{ "/assets/img/method.gif" | relative_url }}" alt="fig_method" class="img-responsive">
+        </div>
+        <div class="col-md-7">
+            <h4>Method</h4>
+              <p class='text'> Our intuition mainly comes from the phenomenon that different sources of supervision have different strengths. To better model this nature, we need to (1) explicitly model the unique traits of different sources when training and (2) find best suitable sources for generalizing the learned model on unseen sentences. In this paper, we propose a novel framework, named Consensus Network (CONNET), for sequence labeling with multi-source supervisions. We represent the annotation patterns as different biases of annotators over a shared behavior pattern. Both annotator-invariant patterns and annotator-specific biases are modeled in a decoupled way. The first term comes through sharing part of low-level model parameters in a multi-task learning schema. For learning the biases, we decouple them from the model as the transformations on top-level tagging model parameters, such that they can capture the unique strength of each annotator. With such decoupled source representations, we further learn an attention network for dynamically assigning the best sources for every unseen sentence through composing a transformation that represents the agreement among sources (consensus).
+        </div>
+    </div>
+    
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12" >
+            <h4>Experiments</h4>
+        </div>
+    </div>
+    <div class="row middle" style="margin-top: 20px;">
+        <div class="col-md-5" style="text-align: center;">
+            <div class="img-exp"> <img src="{{ "/assets/img/hierarchical_viz.png" | relative_url }}" alt="fig_viz" class="img-responsive center-block"> </div>
+        </div>
+        <div class="col-md-7">
+            <p class='text' style="text-align: justify;"><strong>Learning with crowd annotations.</strong>. We can see that CONNET outperforms all other methods on both datasets significantly on F1 score, which shows the ef- fectiveness of dealing with noisy annotations for higher-quality labels.
+            </p>
+        </div>
+    </div>
+    <div class="row middle">
+        <div class="col-md-5">
+            <div class="img-exp" style="padding-top: 20px;"><img src="{{ "/assets/img/re_tab.png" | relative_url }}" alt="fig_rule_extraction" class="img-responsive center-block"></div>
+        </div>
+        <div class="col-md-7">
+            <p class='text' style="text-align: justify;"><strong>Unsupervised cross-domain model adaptation.</strong> We can see that CONNET performs the best on most of the domains and achieves the highest average score over all domains.
+            </p>
+        </div>
+    </div>
+    <div class="row middle">
+        <div class="col-md-5 ">
+            <div class="img-exp "><img src="{{ "/assets/img/human_eval.png" | relative_url }}" alt="fig_rule_extraction" class="img-responsive center-block"></div>
+        </div>
+        <div class="col-md-7">
+            <p class='text' style="text-align: justify;"><strong>Visualization of case study.</strong> It is enlightening to analyze whether the model decides the importance of annotators given a sentence. The visualization shows (a) the expertise of annotators; (b) attention weights for sample sentences. We can see the attention module would give more weights to those annotators  </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row" id="cite">
+        <div class="col-md-12">
+            <h4>To cite us</h4>
+            <pre>
+@inproceedings{
+    Lan2020learning,
+    title={Learning to Contextually Aggregate Multi-Source Supervision for Sequence Labeling},
+    author={Ouyu Lan and Xiao Huang and Bill Yuchen Lin and He Jiang and Liyuan Liu and Xiang Ren},
+    booktitle={Proc. of ACL},
+    year={2020},
+    url={https://arxiv.org/abs/1910.04289}
+    }</pre>
+        </div>
+    </div>
+    <div class="row" id="contact">
+        <div class="col-md-12">
+            <h4> Contact </h4>
+            <p class='text'>If you have any questions about the paper or the code, please feel free to contact Ouyu Lan (lanouyu at gmail com) or Xiao Huang (huan183 at usc edu).</p>
+        </div>
+   </div>
+
+</div>
